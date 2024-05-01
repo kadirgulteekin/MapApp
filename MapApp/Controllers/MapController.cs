@@ -11,7 +11,7 @@ namespace MapApp.Controllers
     public class MapController : ControllerBase
     {
         private readonly MapDbContext _context;
-
+        
         public MapController(MapDbContext context)
         {
             _context = context;
