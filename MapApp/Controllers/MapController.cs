@@ -29,8 +29,8 @@ namespace MapApp.Controllers
 
                 await WritePointsToFile(points);
 
-                //_context.PointDtos.Add(point);
-                //await _context.SaveChangesAsync();
+                _context.PointDtos.Add(point);
+                await _context.SaveChangesAsync();
 
                 return Ok();
             }
